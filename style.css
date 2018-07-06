@@ -1,0 +1,93 @@
+ul,
+ol {
+  list-style: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+body {
+  overflow: hidden;
+}
+#canvas {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.actions {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+}
+.actions svg {
+  width: 3em;
+  height: 3em;
+  transition: all 0.3s;
+}
+.actions svg.active {
+  border-radius: 50%;
+  background: rgba(211, 211, 211, 0.8);
+}
+.pen_colors {
+  position: fixed;
+  top: 80px;
+  left: 12px;
+}
+.pen_colors > li {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+  margin: 10px 0;
+  transition: all 0.2s;
+}
+.pen_colors > li.black {
+  background: black;
+}
+.pen_colors > li.red {
+  background: red;
+}
+.pen_colors > li.blue {
+  background: blue;
+}
+.pen_colors > li.yellow {
+  background: yellow;
+}
+.pen_colors > li.active {
+  transform: scale(1.5);
+}
+.sizes {
+  position: fixed;
+  right: 20px;
+  top: 10px;
+}
+.sizes > li {
+  margin: 15px 0;
+  border-radius: 2px;
+}
+.sizes > .small {
+  height: 0px;
+  width: 30px;
+  border-top: 3px solid black;
+}
+.sizes > .medium {
+  height: 0;
+  width: 30px;
+  border-top: 6px solid black;
+}
+.sizes > .large {
+  height: 0;
+  width: 30px;
+  border-top: 10px solid black;
+}
+.sizes > li.active {
+  margin: 15px -10px;
+}
